@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Yarcev_csharp_lab_4">
+  <DataContextMoniker Name="/Yarcev_csharp_lab_4DataContext" />
+  <nestedChildShapes>
+    <classShape Id="450b22e6-f859-4c07-8111-f0cbe1733e53" absoluteBounds="8.375, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/Yarcev_csharp_lab_4DataContext/all_time" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4a60106-1868-4a2a-b856-5e4dd29f8a45" absoluteBounds="8.39, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e57613ce-d42f-4430-acd2-2c1c6f40b2cb" absoluteBounds="2.5, 0.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Yarcev_csharp_lab_4DataContext/complaints" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59e1d015-c69e-48fd-b971-2a14c587d50a" absoluteBounds="2.5150000000000006, 1.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6da04543-790f-4719-bdf3-87dd9657f8d8" absoluteBounds="5.375, 0.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Yarcev_csharp_lab_4DataContext/list_car" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e991f270-1181-4ff9-a73d-0d3cec86258c" absoluteBounds="5.3900000000000006, 1.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="96ee089d-4aed-40bb-b3fc-92121be6fbf7" absoluteBounds="6, 3.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Yarcev_csharp_lab_4DataContext/number_on_way" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e011ddcd-6463-441f-871a-8f982dbf3032" absoluteBounds="6.0150000000000006, 4.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1f6eef05-86e1-499c-bb11-02c13e1d3eec" absoluteBounds="8.375, 3.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Yarcev_csharp_lab_4DataContext/start_end" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce65aae9-8ff7-41df-b640-3ea9cc48f562" absoluteBounds="8.39, 4.0850000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="24df8103-c037-4353-a7dc-0a6dd00bcc5b" absoluteBounds="8.375, 2.125, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/Yarcev_csharp_lab_4DataContext/way" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2a123570-6597-4547-a19c-ce6afbcd0b52" absoluteBounds="8.39, 2.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.375 : 1.41429768880208); (4.5 : 1.41429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Yarcev_csharp_lab_4DataContext/list_car/list_car_complaints" />
+      <nodes>
+        <classShapeMoniker Id="6da04543-790f-4719-bdf3-87dd9657f8d8" />
+        <classShapeMoniker Id="e57613ce-d42f-4430-acd2-2c1c6f40b2cb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.375 : 2.125); (9.375 : 1.8862939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Yarcev_csharp_lab_4DataContext/way/way_all_time" />
+      <nodes>
+        <classShapeMoniker Id="24df8103-c037-4353-a7dc-0a6dd00bcc5b" />
+        <classShapeMoniker Id="450b22e6-f859-4c07-8111-f0cbe1733e53" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.375 : 2.7612944453125); (6.375 : 2.7612944453125); (6.375 : 2.20359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Yarcev_csharp_lab_4DataContext/way/way_list_car" />
+      <nodes>
+        <classShapeMoniker Id="24df8103-c037-4353-a7dc-0a6dd00bcc5b" />
+        <classShapeMoniker Id="6da04543-790f-4719-bdf3-87dd9657f8d8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.375 : 3.31899251302083); (8 : 3.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Yarcev_csharp_lab_4DataContext/way/way_number_on_way" />
+      <nodes>
+        <classShapeMoniker Id="24df8103-c037-4353-a7dc-0a6dd00bcc5b" />
+        <classShapeMoniker Id="96ee089d-4aed-40bb-b3fc-92121be6fbf7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.375 : 3.31899251302083); (9.375 : 3.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Yarcev_csharp_lab_4DataContext/way/way_start_end" />
+      <nodes>
+        <classShapeMoniker Id="24df8103-c037-4353-a7dc-0a6dd00bcc5b" />
+        <classShapeMoniker Id="1f6eef05-86e1-499c-bb11-02c13e1d3eec" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

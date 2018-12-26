@@ -1,0 +1,9 @@
+C:\Users\dimay\Desktop\с#_4\Yarcev_csharp_lab_4\Yarcev_csharp_lab_4\obj\Debug\Yarcev_csharp_lab_4.csprojAssemblyReference.cache
+C:\Users\dimay\Desktop\с#_4\Yarcev_csharp_lab_4\Yarcev_csharp_lab_4\obj\Debug\Yarcev_csharp_lab_4.csproj.CoreCompileInputs.cache
+C:\Users\dimay\Desktop\с#_4\Yarcev_csharp_lab_4\Yarcev_csharp_lab_4\bin\Debug\Yarcev_csharp_lab_4.exe.config
+C:\Users\dimay\Desktop\с#_4\Yarcev_csharp_lab_4\Yarcev_csharp_lab_4\bin\Debug\Yarcev_csharp_lab_4.exe
+C:\Users\dimay\Desktop\с#_4\Yarcev_csharp_lab_4\Yarcev_csharp_lab_4\bin\Debug\Yarcev_csharp_lab_4.pdb
+C:\Users\dimay\Desktop\с#_4\Yarcev_csharp_lab_4\Yarcev_csharp_lab_4\obj\Debug\Yarcev_csharp_lab_4.exe
+C:\Users\dimay\Desktop\с#_4\Yarcev_csharp_lab_4\Yarcev_csharp_lab_4\obj\Debug\Yarcev_csharp_lab_4.pdb
+C:\Users\dimay\Desktop\с#_4\Yarcev_csharp_lab_4\Yarcev_csharp_lab_4\bin\Debug\Yarcev_csharp_lab_4.mdf
+C:\Users\dimay\Desktop\с#_4\Yarcev_csharp_lab_4\Yarcev_csharp_lab_4\bin\Debug\Yarcev_csharp_lab_4_log.ldf

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Yarcev_csharp_lab_4" Class="Yarcev_csharp_lab_4DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Yarcev_csharp_lab_4.mdf;Integrated Security=True" SettingsObjectName="Yarcev_csharp_lab_4.Properties.Settings" SettingsPropertyName="Yarcev_csharp_lab_4ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.all_time" Member="all_time">
+    <Type Name="all_time">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idway" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="time" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Association Name="way_all_time" Member="way" ThisKey="idway" OtherKey="Id" Type="way" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.complaints" Member="complaints">
+    <Type Name="complaints">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_list_car" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="text" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="list_car_complaints" Member="list_car" ThisKey="id_list_car" OtherKey="Id" Type="list_car" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.list_car" Member="list_car">
+    <Type Name="list_car">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idway" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="number_car" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="list_car_complaints" Member="complaints" ThisKey="Id" OtherKey="id_list_car" Type="complaints" />
+      <Association Name="way_list_car" Member="way" ThisKey="idway" OtherKey="Id" Type="way" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.number_on_way" Member="number_on_way">
+    <Type Name="number_on_way">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idway" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="way_number_on_way" Member="way" ThisKey="idway" OtherKey="Id" Type="way" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.start_end" Member="start_end">
+    <Type Name="start_end">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idway" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="start" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[end]" Member="end" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="way_start_end" Member="way" ThisKey="idway" OtherKey="Id" Type="way" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.way" Member="way">
+    <Type Name="way">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="way_all_time" Member="all_time" ThisKey="Id" OtherKey="idway" Type="all_time" />
+      <Association Name="way_list_car" Member="list_car" ThisKey="Id" OtherKey="idway" Type="list_car" />
+      <Association Name="way_number_on_way" Member="number_on_way" ThisKey="Id" OtherKey="idway" Type="number_on_way" />
+      <Association Name="way_start_end" Member="start_end" ThisKey="Id" OtherKey="idway" Type="start_end" />
+    </Type>
+  </Table>
+</Database>
